@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java Script Operators</title>
+<style> 
+table, th, td
+ {
+border:1px solid black;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th >Subject</th>
+<th>Machine Learning</th>
+<th>Artificial Intelligence</th>
+<th>Web Technologies</th>
+<th>Compiler Design</th>
+<th>Total</th>
+<th>Average</th>
+</tr>
+<tr>
+<th>marks</th>
+<td>90</td>
+<td>89</td>
+<td>92</td>
+<td>95</td>
+<td id="d1"></td>
+<td id="d2"></td>
+</tr>
+</table>
+<script>
+var m = 90 ;
+var a = 89;
+var w = 92;
+var c = 95;
+var Total = m + a + w + c ;
+var Avg=Total/4;
+document.getElementById("d1").innerHTML = Total;
+document.getElementById("d2").innerHTML = Avg;
+</script>
+</body>
+</html>
