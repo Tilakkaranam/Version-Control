@@ -35,8 +35,16 @@ var m = 90 ;
 var a = 89;
 var w = 92;
 var c = 95;
-var Total = m + a + w + c ;
-var Avg=Total/4;
+function add(a,b,c,d)
+{
+   return a+b+c+d;
+}
+var Total = add(m,a,w,c);
+function avg(a)
+{
+  return a/4;
+}
+var Avg=avg(Total);
 document.getElementById("d1").innerHTML = Total;
 document.getElementById("d2").innerHTML = Avg;
 </script>
