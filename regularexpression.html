@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Regular Expressions</title>
+</head>
+<body onload='document.form1.text1.focus()'>
+<div class="mail">
+<h2>Enter only alphabets in name field</h2>
+<form name="form1" action="#">
+<ul>
+<li>Code:</li>
+<li><input type='text' name='txt1'/></li>
+<li><input type="submit" name="submit" value="Submit" onclick="name1(document.form1.txt1)" /></li>
+</ul>
+</form>
+</div>
+<script>
+function name1(itxt)
+      { 
+      var letters = /^[A-Za-z]+$/;
+      if(itxt.value.match(letters))
+      {
+      alert('Your have entered name in correct format');
+      return true;
+      }
+      else
+      {
+      alert('Please enter alphabet characters only');
+      return false;
+      }
+      }
+      </script>
+
+
+</body>
+</html>
